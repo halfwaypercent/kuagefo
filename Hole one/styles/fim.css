@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #006837;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    background-color:#006837;
+    overflow: hidden;
+}
+
+/* Dividindo os containers */
+.left-container, .right-container {
+    flex: 1;
+}
+
+.left-section {
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 500px;
+    height: 100%;
+    border-top-right-radius: 400px;
+    border-bottom-right-radius: 400px;
+    
+}
+
+.left-section img {
+    max-width: 10q 0%;
+    height: auto;
+    
+}
+
+.right-section {
+    padding: 40px;
+    background-color: #006837;
+    color: white;
+    
+}
+
+.text-section {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.menu-button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #004c2e;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #003522;
+}
+
+.avaliacao:not(:checked) > input{
+    position: absolute;
+    appearance: none;
+}
+
+.avaliacao:not(:checked) > input{
+    position: absolute;
+    appearance: none;
+}
+
+
+.avaliacao:not(:checked) > input{
+    cursor: pointer;
+    font-size: 60px;
+    color: #8b8b8b;
+    float: right;
+}
+
+.avaliacao:not(:checked) > input{
+    content: "★";
+}
+
+.avaliacao:not(:checked) > input{
+    position: absolute;
+    appearance: none;
+}

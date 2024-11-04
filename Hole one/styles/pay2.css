@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*corpo*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c6c6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/*frame*/
+.container {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+/*oq separa os 2 do endereço*/                                /*cara arruma isso com um espaçamento entre eles que nao ta indo porfavor*/
+.two{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+/*separador de direita e esquerta*/
+.left-panel, .right-panel {
+    padding: 20px;
+    width: 50%;
+}
+/* cor da esquerda*/                                       /*esse e outro b.o que ta foda de resolver pq eu queria fazer a maquina certinho mas se pa eu sou limitado entao tenta tu fazer mas o resto ta de boa OBS:tem que fazer o botao certinha igual aquele modelo la que tu fez no cadastro*/
+.left-panel {
+    background-color: #f5f5dc;
+    border-right: 1px solid #ddd;
+}                                                                        /*e nois cz me manda mensagem qualquer coisa*/
+/*card da nota fiscal da esquerda*/
+.cart-items {
+    background-color: #fefefe;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.cart-items p {
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*literalmente o total XD*/
+.total {
+    font-weight: bold;
+    font-size: 16px;
+}
+/*botao geral*/
+.btn-finalizar {
+    background-color: #004d00;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 43px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn-finalizar:hover {
+    background-color: #006600;
+}
+/*parte da direita*/
+.right-panel {
+    background-color: #f0f0f0;
+}
+
+.payment-method img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.card-info label, .address label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+}
+
+.card-info input, .address input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-details input {
+    width: 30%;
+}
+
+.btn-save-address {
+    background-color: #004d00;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-save-address:hover {
+    background-color: #004d00;
+}
+
+label[for="save-address"] {
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+ /* Ajuste do botao da direita*/
+.end {
+    margin-top: 5px;
+    margin-left: 200px; 
+}
+/*font do endereço postal*/
+.ende-postal {
+font-size: 40px;
+}
+

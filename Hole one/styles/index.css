@@ -1,0 +1,235 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #e5e5e5;
+}
+body{
+background-color: #f5f5f5;
+}
+
+.fa{
+ width: 30px;
+}
+
+.logo img {
+  width: 150px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.search input {
+    padding: 5px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+.rodape{
+    background-color: #006837;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 18px;
+    margin-top: 50%;
+
+}
+
+.rodape_lista{
+    list-style: none;
+    color: #ffffff;
+    
+}
+.rodape_lista a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.rodape_redes-sociais{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 25px;
+}
+   
+  .fa-brands{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a{
+    float: left;
+    margin-left: 10px;
+  }
+.conta{
+    margin-left: -2px;
+    margin-top: -6px;
+    color: #000000;
+}
+.fav{
+    margin-left: -4px;
+    margin-top: -6px;
+    color: #000000;
+}
+.car{
+    margin-top: -6px;
+    color: #000000;
+}
+.icons{
+    text-decoration: none;
+}
+.container{
+    width: 700px;
+    height: 450px;
+    background-color: #005527;
+    margin-top: 80px;
+    border-radius: 30px;
+    margin-left: 30px;
+    float: left;
+
+}
+.volei{
+    float: left;
+    margin-left: 35px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.bas{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.fut{
+    
+    margin-left: 10px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.golf{
+    float: left;
+    margin-left: 35px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.futame{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+.base{
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.teniis{
+    list-style: none;
+    margin-top: 80px;
+}
+.tenis{
+    margin-left: 40px;
+}
+
+
+.item-content {
+    position: relative;
+    margin: 0 10px;
+    list-style: none;
+  }
+  
+  .item-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #006837;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .item-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgba(255, 255, 255, 0.12);
+  }
+  
+  .item-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 25px;
+    height: 25px;
+  }
+  
+  .item-content a:hover {
+    color: #fff;
+  }
+  
+  .item-content a .filled {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+   
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .item-content a:hover .filled {
+    height: 100%;
+  }
+  
+  .item-content a[data-social="instagram"] .filled,
+  .item-content a[data-social="instagram"] .tooltip::before {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1f);
+  }
+  
+  .item-content a[data-social="facebook"] .filled,
+  .item-content a[data-social="facebook"] .tooltip::before {
+    background: #1877F2;
+  }
+  
+  .item-content a[data-social="email"] .filled,
+  .item-content a[data-social="email"] .tooltip::before {
+    background: red;
+  }
+  .item-content a[data-social="twitch"] .filled,
+  .item-content a[data-social="twitch"] .tooltip::before {
+    background: #9146FF;
+  }
+  .item-content a[data-social="linkedin"] .filled,
+  .item-content a[data-social="linkedin"] .tooltip::before {
+    background: #0A66C2;
+  }
+  .item-content a[data-social="threads"] .filled,
+  .item-content a[data-social="threads"] .tooltip::before {
+    background: #000000;
+  }
+  .item-content a[data-social="bluesky"] .filled,
+  .item-content a[data-social="bluesky"] .tooltip::before {
+    background: #0285FF;
+  }
+  .item-content a[data-social="git"] .filled,
+  .item-content a[data-social="git"] .tooltip::before {
+    background: #000000;
+  }
+  .item-content a[data-social="ttk"] .filled,
+  .item-content a[data-social="ttk"] .tooltip::before {
+    background: #000000;
+  }
