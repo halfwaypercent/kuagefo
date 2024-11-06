@@ -3,47 +3,130 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  background-color: #f5f5f5;
+}
 ::-webkit-scrollbar {
   display: none;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    background-color: #e5e5e5;
-}
-body{
-  background-color: #f5f5f5;
-}
-
-.fa{
-   width: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #e5e5e5;
+  position: relative;
 }
 
 .logo img {
-    width: 150px;
+  width: 150px;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    gap: 30px;
+  display: flex;
+  list-style: none;
+  gap: 30px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .search input {
-    padding: 5px;
-    width: 200px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
+  padding: 5px;
+  width: 200px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
 }
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Oculta o menu padrão e exibe o botão de menu em telas pequenas */
+@media (max-width: 768px) {
+  nav ul,
+  .search,
+  .icons {
+      display: none;
+  }
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-btn .line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+}
+
+   /* Animação do botão de menu para "<" */
+   .menu-btn.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(11px, 5px);
+}
+.menu-btn.active .line:nth-child(2) {
+    opacity: 0;
+}
+.menu-btn.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(19px, -12px);
+}
+
+
+/* Estilo do menu lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Menu começa oculto */
+  width: 250px;
+  height: 100%;
+  transition: left 0.4s ease;
+  background-color: #e5e5e5;
+  transition: left 0.3s;
+  padding-top: 20px;
+  z-index: 1000;
+}
+
+.sidebar nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 20px;
+  align-items: center;
+}
+
+.sidebar nav ul li a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar.active {
+  left: 0; /* Exibe o menu ao ativar */
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+
 .rodape{
     background-color: #006837;
     display: flex;
@@ -227,3 +310,5 @@ a{
   font-family: 'Arial Narrow Bold', sans-serif;
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+

@@ -28,7 +28,45 @@
             <a href="./html/favoritos.html"><i class="iheart"><img src="../img/favoritos-removebg-preview.png" width="45px" height="40px"></i></a>
             <a href="./html/pay1.html"><img src="../img/carrinho-removebg-preview.png" width="50px" height="40px"></a>
         </div>
+        <!-- Botão de menu para dispositivos móveis -->
+        <div class="menu-btn" onclick="toggleMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    
     </header>
+    
+    <!-- Menu lateral oculto -->
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="../html/prod.html">Unissex</a></li>
+                <li><a href="../html/prod.html">Feminino</a></li>
+                <li><a href="../html/prod.html">Masculino</a></li>
+                <li><a href="../html/prod.html">Acessórios</a></li>
+            </ul>
+        </nav>
+
+            <!-- Ícones de conta, favoritos e carrinho na sidebar para mobile -->
+    <div class="sidebar-icons">
+        <a href="./html/login.html"><img src="../img/conta-removebg-preview.png" width="30px" height="40px"></a>
+        <a href="./html/favoritos.html"><img src="../img/favoritos-removebg-preview.png" width="45px" height="40px"></a>
+        <a href="./html/pay1.html"><img src="../img/carrinho-removebg-preview.png" width="50px" height="40px"></a>
+    </div>
+</div>
+
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            const menuBtn = document.querySelector(".menu-btn");
+            sidebar.classList.toggle("active");
+            menuBtn.classList.toggle("active");
+        }
+        </script>
+        
     
     <section class="container">
         <li class="volei"><a href="./html/prod.html"><img src="img/voleibol.png" width="180px" height="180px" alt="volei"></a></li>

@@ -14,21 +14,60 @@
         </div>
         <nav>
             <ul>
-                <li><a href="../html/prod.html">Unissex</a></li>
-                <li><a href="../html/prod.html">Feminino</a></li>
-                <li><a href="../html/prod.html">Masculino</a></li>
-                <li><a href="../html/prod.html">Acessórios</a></li>
+                <li><a href="prod.html">Unissex</a></li>
+                <li><a href="prod.html">Feminino</a></li>
+                <li><a href="prod.html">Masculino</a></li>
+                <li><a href="prod.html">Acessórios</a></li>
             </ul>
         </nav>
         <div class="search">
             <input type="text" placeholder="Buscar...">
         </div>
         <div class="icons">
-            <a href="../html/login.html"><img src="../img/conta-removebg-preview.png" width="30px" height="40px"></a>
-            <a href="../html/favoritos.html"><i class="iheart"><img src="../img/favoritos-removebg-preview.png" width="45px" height="40px"></i></a>
-            <a href="../html/carrinho.html"><img src="../img/carrinho-removebg-preview.png" width="50px" height="40px"></a>
+            <a href="login.html"><img src="../img/conta-removebg-preview.png" width="30px" height="40px"></a>
+            <a href="favoritos.html"><i class="iheart"><img src="../img/favoritos-removebg-preview.png" width="45px" height="40px"></i></a>
+            <a href="pay1.html"><img src="../img/carrinho-removebg-preview.png" width="50px" height="40px"></a>
         </div>
+        <!-- Botão de menu para dispositivos móveis -->
+        <div class="menu-btn" onclick="toggleMenu()">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </div>
+    
     </header>
+    
+    <!-- Menu lateral oculto -->
+    <div class="sidebar" id="sidebar">
+        <nav>
+            <ul>
+                <li><a href="prod.html">Unissex</a></li>
+                <li><a href="prod.html">Feminino</a></li>
+                <li><a href="prod.html">Masculino</a></li>
+                <li><a href="prod.html">Acessórios</a></li>
+            </ul>
+        </nav>
+
+            <!-- Ícones de conta, favoritos e carrinho na sidebar para mobile -->
+    <div class="sidebar-icons">
+        <a href="login.html"><img src="../img/conta-removebg-preview.png" width="30px" height="40px"></a>
+        <a href="favoritos.html"><img src="../img/favoritos-removebg-preview.png" width="45px" height="40px"></a>
+        <a href="pay1.html"><img src="../img/carrinho-removebg-preview.png" width="50px" height="40px"></a>
+    </div>
+</div>
+
+    </div>
+    
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById("sidebar");
+            const menuBtn = document.querySelector(".menu-btn");
+            sidebar.classList.toggle("active");
+            menuBtn.classList.toggle("active");
+        }
+        </script>
+
+
     <section class="esquerda_container">
     <img src="../img/tenis.png" alt="produto" width="560px" height="560px">
     </section>
@@ -36,8 +75,8 @@
     <section class="textos">
         <h1 class="nmproduto">Camisa De Beisebol | Newyork Black Unisex Baseball Jersey Preto</h1>
         <h2 class="preço">R$ 180,00</h2>
-        <button class="carin"><a href="../html/carrinho.html"> +Adicionar no carrinho  </a></button>
-            <button class="favo"><a href="../html/favoritos.html"> +Adicionar no carrinho  </a></button> 
+        <button class="carin"><a href="carrinho.html"> +Adicionar no carrinho  </a></button>
+            <button class="favo"><a href="favoritos.html"> +Adicionar nos favoritos  </a></button> 
             <h1 class="descricao">Descrição</h1>
             <h3 class="desproduto">A camisa de beisebol New York Black é uma peça unissex estilo jersey, projetada com um tema clássico e urbano. Feita principalmente na cor preta, apresenta detalhes típicos de uma camisa de beisebol, como botões frontais, mangas raglan em contraste e um design que lembra o uniforme tradicional dos jogadores desse esporte. É ideal para quem busca um visual esportivo casual com um toque de estilo urbano e nostálgico.</h3>
             <button class="p">PP</button>  <button class="p">P</button>  <button class="p">M</button> 
@@ -46,11 +85,11 @@
 
     <footer class="rodape">
         <ul class="rodape_lista">
-            <a href="../html/devs/carlos.html"><li class="rodape_lista_itens">Carlos Henrique</li></a><br>
-            <a href="../html/devs/enzo.html"><li class="rodape_lista_itens">Enzo Ribeiro</li></a><br>
-            <a href="../html/devs/julia.html"><li class="rodape_lista_itens">Julia Gabrielle</li></a><br>
-            <a href="../html/devs/marcos.html"><li class="rodape_lista_itens">Marcos Augusto</li></a><br>
-            <a href="../html/devs/otavio.html"><li class="rodape_lista_itens">Otávio da silva</li></a>
+            <a href="devs/carlos.html"><li class="rodape_lista_itens">Carlos Henrique</li></a><br>
+            <a href="devs/enzo.html"><li class="rodape_lista_itens">Enzo Ribeiro</li></a><br>
+            <a href="devs/julia.html"><li class="rodape_lista_itens">Julia Gabrielle</li></a><br>
+            <a href="devs/marcos.html"><li class="rodape_lista_itens">Marcos Augusto</li></a><br>
+            <a href="devs/otavio.html"><li class="rodape_lista_itens">Otávio da silva</li></a>
             
         </ul>
     
